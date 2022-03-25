@@ -127,7 +127,7 @@ coletou durante toda sua operação.
   </tr>
   <tr>
     <td class="tg-0pky"></td>
-    <td class="tg-0pky">2. O Sistema verifica o saldo e emite o bilhete.</td>
+    <td class="tg-0pky">2. O Sistema verifica o saldo, debita o valor do bilhete do saldo e emite o bilhete.</td>
   </tr>
   <tr>
     <td class="tg-0lax"></td>
