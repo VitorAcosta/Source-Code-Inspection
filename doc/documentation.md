@@ -20,7 +20,7 @@ coletou durante toda sua operação.
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Nome**               | Inserir dinheiro                                                                                                                                |
 | **Atores**             | Cliente                                                                                                                                         |
-| **Sumário**            | Uma quantia de dinheiro é inserida na máquina. É importante ressaltar que essa quantia sempre é representada por uma única nota de papel-moeda. |
+| **Sumário**            | Uma quantia de dinheiro em forma de texto e no respectivo campo da interface é inserida na máquina. É importante ressaltar que essa quantia sempre é representada por uma única nota de papel-moeda. |
 | **Complexidade**       | Médio                                                                                                                                           |
 | **Regras de Negócio**  | N/D                                                                                                                                             |
 | **Pré-Condições**      | N/D                                                                                                                                             |
