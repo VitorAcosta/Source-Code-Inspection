@@ -201,6 +201,28 @@ coletou durante toda sua operação.
 </tbody>
 </table>
 
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-c3ow" colspan="2"><span style="font-weight:bold">Fluxo de Exceção 1: 2a. Não existe saldo suficiente para troco.</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:bold">Ações do Ator</span></td>
+    <td class="tg-0pky"><span style="font-weight:bold">Ações do Sistema</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">1. O Sistema informa que o saldo é insuficiente para o troco.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">2. Caso de uso é encerrado.</td>
+  </tr>
+</tbody>
+</table>
+
 ## *1.4 Protótipos*
 
 ## 1.4.1 Tela principal
