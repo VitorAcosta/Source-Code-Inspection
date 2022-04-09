@@ -2,6 +2,7 @@ package br.calebe.ticketmachine.tests;
 
 import static org.junit.Assert.assertEquals;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import br.calebe.ticketmachine.core.TicketMachine;
@@ -17,15 +18,12 @@ public class TicketMachineTest {
         // Lidar com a Exception do método PapelMoeda 
         try{
             tm.inserir(inserted_value);
+            assertEquals(inserted_value, tm.getSaldo());
         }
         catch(Exception e){
-            ;
+            e.getStackTrace();
+            Assert.fail();
         }
-
-        int curr_value = tm.getSaldo();
-        int expected = inserted_value;
-
-        assertEquals(expected, curr_value);
 
     }
 
