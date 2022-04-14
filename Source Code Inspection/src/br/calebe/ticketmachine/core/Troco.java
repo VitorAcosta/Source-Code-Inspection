@@ -6,51 +6,24 @@ import java.util.Iterator;
  *
  * @author Calebe de Paula Bianchini
  */
-class Troco {
+public class Troco {
 
     protected PapelMoeda[] papeisMoeda;
 
     public Troco(int valor) {
         papeisMoeda = new PapelMoeda[6];
-        int count = 0;
-        while (valor % 100 != 0) {
-            count++;
-            valor = valor - 100;
+        int[] papelmoeda_valido = {100,50,20,10,5,2};
+        int qtd_nota = 0;
+        int i = 0;
+        while (valor != 0) {
+            qtd_nota = valor / papelmoeda_valido[i] ;
+            valor = valor % papelmoeda_valido[i];
+            papeisMoeda[(papeisMoeda.length - 1) - i] = new PapelMoeda(papelmoeda_valido[i], qtd_nota);
+            i++;
         }
-        papeisMoeda[5] = new PapelMoeda(100, count);
-        count = 0;
-        while (valor % 50 != 0) {
-            count++;
-            valor = valor - 50;
-        }
-        papeisMoeda[4] = new PapelMoeda(50, count);
-        count = 0;
-        while (valor % 20 != 0) {
-            count++;
-            valor = valor - 20;
-        }
-        papeisMoeda[3] = new PapelMoeda(20, count);
-        count = 0;
-        while (valor % 10 != 0) {
-            count++;
-            valor = valor - 10;
-        }
-        papeisMoeda[2] = new PapelMoeda(10, count);
-        count = 0;
-        while (valor % 5 != 0) {
-            count++;
-            valor = valor - 5;
-        }
-        papeisMoeda[1] = new PapelMoeda(5, count);
-        count = 0;
-        while (valor % 2 != 0) {
-            count++;
-            valor = valor - 2;
-        }
-        papeisMoeda[0] = new PapelMoeda(2, count);
     }
 
-    public TrocoIterator getIterator() {
+    public Iterator<PapelMoeda> getIterator() {
         return new TrocoIterator(this);
     }
 
